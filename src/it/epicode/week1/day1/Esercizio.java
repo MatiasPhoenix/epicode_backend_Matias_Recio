@@ -66,6 +66,7 @@ public class Esercizio {
     public static int perimetroTriangolo (int a, int b, int c){
         int perTriang = a + b + c;
         return  perTriang;
+
     }
 
 }
