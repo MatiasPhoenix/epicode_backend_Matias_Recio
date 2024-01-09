@@ -53,6 +53,17 @@ public class esercizi {
         System.out.println("Hai scritto q. Programma finalizzato");
 
         //Esercizio 4 for
+        System.out.println("Adesso facciamo un conto alla rovescia, scegli un numero!");
+        int mioNumero = scanner.nextInt();
+        System.out.println("Hai scelto il " + mioNumero);
+        System.out.println("Iniziamo il conto alla rovescia");
+        for (int i = mioNumero; i > -1; i-- ){
+            System.out.println(i);
+            if (i == 0){
+                System.out.println("BOOOM");
+            }
+        }
+
     }
 
 
