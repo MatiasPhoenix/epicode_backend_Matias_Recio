@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+        /*
         System.out.println("\n");
         System.out.println("Ciao utente, tra poco dovrai fornirci i tuoi dati.");
 
@@ -41,6 +41,23 @@ public class main {
         System.out.println("Ci hai detto che" + fidanzato);
         System.out.println("Hai " + eta + " anni, e sei del " + (2023-eta));
         System.out.println(hobby);
+        */
+
+        Persona persona1 = new Persona("Pippo", "Coso");
+        Persona persona2 = new Persona("Ciccio", "Tutu");
+
+
+
+        System.out.println(persona1);
+        System.out.println(persona2);
+        System.out.println(persona1.getNome() + " " + persona1.getCognome());
+        System.out.println(persona2.getNome() + " " + persona2.getCognome());
+
+        persona1.copy(persona2);
+        System.out.println(persona1);
+        System.out.println(persona2);
+        System.out.println(persona1.getNome() + " " + persona1.getCognome());
+        System.out.println(persona2.getNome() + " " + persona2.getCognome());
 
 
 
