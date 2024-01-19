@@ -1,16 +1,21 @@
 package it.epicode.week2.day5;
 
+import it.epicode.week2.day3.esercizio.Product;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Catalogo {
 
+    //Variabili
     public Long ISBN;
     public String titolo;
     public Integer annoUscita;
     public Integer numPagine;
 
-
     public Periodic periodicRivista;
 
-
+    //Get e Set
     public Long getISBN() {
         return ISBN;
     }
@@ -51,6 +56,7 @@ public class Catalogo {
         this.periodicRivista = periodicRivista;
     }
 
+    //Costruttore
     public Catalogo(Long ISBN, String titolo, Integer annoUscita, Integer numPagine) {
         this.ISBN = ISBN;
         this.titolo = titolo;
@@ -58,5 +64,17 @@ public class Catalogo {
         this.numPagine = numPagine;
     }
 
+    //metodi
 
+
+    @Override
+    public String toString() {
+        return "Catalogo{" +
+                "ISBN=" + ISBN +
+                ", titolo='" + titolo + '\'' +
+                ", annoUscita=" + annoUscita +
+                ", numPagine=" + numPagine +
+                ", periodicRivista=" + periodicRivista +
+                '}';
+    }
 }
